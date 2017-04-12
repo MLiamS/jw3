@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://epicenter.epicodus.com/courses/131/code_reviews/692 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="./Java week 4_files/8a5eeabe04"></script><script src="./Java week 4_files/nr-1026.min.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"8a5eeabe04","applicationID":"4335657","transactionName":"elpYRhZXXl5WSh5QDV1QaUABTltXREseQApWQg==","queueTime":5,"applicationTime":37,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<title>Epicenter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" media="all" href="./Java week 4_files/application-16c276c649533ce94c30a921a6532270b4a7face4e40889fe7b9927749a26766.css">
+<link rel="shortcut icon" type="image/x-icon" href="https://epicenter.epicodus.com/assets/favicon-d0e8ff63da72a0c5ea15ebc045a7f9d2979d211a12e596a5ed5f5b1534e78919.png">
+<link href="./Java week 4_files/css" rel="stylesheet" type="text/css">
+<script src="./Java week 4_files/saved_resource"></script>
+<script src="./Java week 4_files/jsapi"></script>
+<script src="./Java week 4_files/application-7a9007f4587bf8d5afde51a46c026c58703ff012a315642c041d052181e58edd.js"></script>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="SMEkVXKmA6MyHsii8L1Iud2oqlSiJg/J/ObJ1OJdu6a1CDhZ5GkS887rhwOxvNkBjDp1FqDYUa8mfsdV0/5h/A==">
+</head>
+<body>
+<div class="container">
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div id="navbar" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li>
+<a class="first-navbar-link" href="https://epicenter.epicodus.com/students/1712/courses">Courses</a>
+</li>
+<li>
+<a href="https://epicenter.epicodus.com/students/1712/payments">Payments</a>
+</li>
+<li>
+<a href="https://epicenter.epicodus.com/payment_methods">Payment methods</a>
+</li>
+<li>
+<a href="https://epicenter.epicodus.com/random_pairs">Pair suggestions</a>
+</li>
+<li>
+<a href="https://epicenter.epicodus.com/student/edit">Profile</a>
+</li> </ul>
+<ul class="nav navbar-nav non-mobile-pull-right">
+<li><a data-method="delete" href="https://epicenter.epicodus.com/student/sign_out">Sign out</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div>
+</div>
+<h1>
+Advanced Topics in Java
+</h1>
+<div class="panel panel-default">
+<div class="panel-body">
+<div class="table-responsive">
+<table class="table">
+<thead>
+<tr><th>Objectives</th></tr>
+</thead>
+<tbody>
+<tr><td><p>An interface or inherited class provides similar content in different classes.</p>
+</td></tr>
+<tr><td><p>Database timestamps are included for each sighting.</p>
+</td></tr>
+<tr><td><p>Constants are used in at least one class.</p>
+</td></tr>
+<tr><td><p>ALL Previous standards are met (see below)</p>
+</td></tr>
+<tr><td><p>Project demonstrates an understanding of concepts covered this week. If prompted, you can discuss your code and concepts behind it with an instructor using the correct terminology.</p>
+</td></tr>
+<tr><td><p>Project is in a polished, portfolio-ready state. This includes full database instructions. Form validations. Some styling, but more importantly, a thoughtful, easy to use UI.</p>
+</td></tr>
+<tr><td><p>Application works as expected.</p>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4><strong>Project</strong></h4>
+</div>
+<div class="panel-body">
+<h3>Wildlife Tracker</h3>
+<p>The Forest Service is considering a proposal from a timber company to clearcut a nearby forest of Douglas Fir. Before this proposal may be approved, they must complete an environmental impact study. </p>
+<p>A colleague of yours has begun work on creating an application that allows Rangers to track wildlife sightings in the area, and was able to create a very basic MVP/Skeleton.</p>
+<p>Unfortunately, your colleague has been pulled off the project, and you have been tasked with continuing the work on this app on your own. Oftentimes developers must maintain, develop and debug existing codebases. This week, you'll do the same! Much of their site has already been built. The code provided to you contains the following </p>
+<ul>
+<li>Basic classes</li>
+<li>Basic Spark setup, VelocityTemplateEngine, and vtl template structure</li>
+<li>Basic routing in App.java</li>
+<li>Basic tests</li>
+<li>Database setup instructrions (in Readme)</li>
+</ul>
+<p>Begin this project by forking your colleague's work, importing the database, running all tests and running the app to determine exactly how much of the work is complete. </p>
+<p>Once you have assessed the work, read through the further explorations and choose several that you wish to implement.
+Then, begin to expand the project. Implement as many further explorations as you are able, but choose wisely: you will not be able to implement all of them. Pick things to implement that you believe create the most value for the Forest Service and the Rangers.</p>
+<h4>Workflow</h4>
+<p>The Wildlife Tracker repo is available <a href="https://github.com/epicodus-lessons/java-wildlife-tracker.git">here on GitHub</a>. Here's how you'll work off of this existing code:</p>
+<ul>
+<li>Fork the repository into your own GitHub account (Using the Fork button in the upper-right corner of the GitHub repo).</li>
+<li>Clone the forked repository from your GitHub account to your local machine.</li>
+<li>Push commits to your account's forked repo.</li>
+<li>Once complete, submit your fork of the repo through Epicenter.</li>
+<li>Please do not send pull requests to the upstream starter repository.</li>
+</ul>
+<h4>Just like you'll experience at your eventual internship and place of employment, you're jumping into code that's already been written. #### So before you begin developing take time to work through the code, and determine what everything is doing. You may find that there are some errors or inconsistencies in the code - in which case, you should make note of these in your commit messages if you implement fixes. You may find it helpful to leave yourself comments, or create branches to complete work on individual features.</h4>
+<p><em><strong>Completed Objectives</strong></em></p>
+<p><em>The application must track two categories of wildlife:</em></p>
+<h4>Animals</h4>
+<p>At the very least, require: </p>
+<ul>
+<li> <code class="prettyprint">id</code></li>
+<li> <code class="prettyprint">name</code></li>
+</ul>
+<h4>Endangered Animals</h4>
+<p>Due to their dwindling numbers, Rangers must record additional information about <code class="prettyprint">EndangeredAnimal</code>s: </p>
+<ul>
+<li><code class="prettyprint">id</code></li>
+<li><code class="prettyprint">name</code></li>
+<li><code class="prettyprint">health</code>
+<ul>
+<li>Use constants to define options like <code class="prettyprint">"healthy"</code>, <code class="prettyprint">"ill"</code>, and <code class="prettyprint">"okay"</code>. </li>
+</ul></li>
+<li> <code class="prettyprint">age</code> (an estimated guess by the ranger)
+<ul>
+<li>Use constants to define options like <code class="prettyprint">"newborn"</code>, <code class="prettyprint">"young"</code>, or <code class="prettyprint">"adult"</code>. </li>
+</ul></li>
+</ul>
+<p>Each time an animal species of either category is seen, a <code class="prettyprint">Sighting</code> must be reported: </p>
+<h4>Sightings</h4>
+<p>When wildlife is spotted, a Ranger submits a form to record a <code class="prettyprint">Sighting</code> containing the following:</p>
+<ul>
+<li><code class="prettyprint">id</code> of <code class="prettyprint">Animal</code> or <code class="prettyprint">EndangeredAnimal</code> species </li>
+<li><code class="prettyprint">location</code>
+<ul>
+<li>(Conveyed in any manner you choose ie: <code class="prettyprint">"Zone A"</code>, <code class="prettyprint">"Near the River"</code>, <code class="prettyprint">"NE Quadrant"</code>, or latitude and longitude values are all acceptable.)<br></li>
+</ul></li>
+<li><code class="prettyprint">rangerName</code></li>
+</ul>
+<h2>In Progress / Outstanding</h2>
+<hr>
+<p>Your independent project this week will be evaluated on the following criteria to be a pass:</p>
+<ul>
+<li>An interface <em><strong>or</strong></em> inherited class provides similar content in different classes. </li>
+<li>Database timestamps are included for each sighting. </li>
+<li>Constants are used in at least one class.<br></li>
+<li>ALL Previous standards are met (see below). </li>
+<li>Project demonstrates an understanding of concepts covered this week. If prompted, you can discuss your code and concepts behind it with an instructor using the correct terminology. </li>
+<li>Project is in a polished, portfolio-ready state. This includes full database instructions. Form validations. Some styling, but more importantly, a thoughtful, easy to use UI.</li>
+<li>Application works as expected.</li>
+</ul>
+<h3>Previous Objectives</h3>
+<p>For reference, here are the previous weeks' objectives:</p>
+<ul>
+<li>Tests have complete coverage for all behaviors. </li>
+<li>All tests are formatted correctly and pass.</li>
+<li>Logic is easy to understand.</li>
+<li>Build files are discluded from Git using a .gitignore file.</li>
+<li>Code and Git documentation follows best practices (descriptive variables names, proper indentation and spacing, separation between front and back-end logic, detailed commit messages in the correct tense, and a well-formatted README).</li>
+</ul>
+<h4>In order to receive an "all of the time" grade, implement the above <em>as well as</em> several further explorations.</h4>
+<h2>Further Exploration</h2>
+<hr>
+<h4>Exceptions</h4>
+<p>It may take a few days for new Rangers to familiarize themselves with the app. To avoid saving incomplete or invalid records, throw and catch exceptions if Rangers attempt to submit an incomplete form, or misuse the application in any other conceivable fashion. At least two exceptions should be thrown and caught.</p>
+<p>Other features that are requested:</p>
+<ul>
+<li>Add more properties to the Animal class, and build out your methods to update them.</li>
+<li>Consider how you might handle civilians calling in sightings of animals. How would you deal with this case?</li>
+<li>Build a <code class="prettyprint">Ranger</code> class. This could include contact information, a badge number, etc. Then, associate each <code class="prettyprint">Sighting</code> with a <code class="prettyprint">Ranger</code> object instead of just a name. Include a page where users may see all <code class="prettyprint">Ranger</code>s, and click each to see which <code class="prettyprint">Sighting</code>s they've reported.</li>
+<li>Build a <code class="prettyprint">Location</code> class. Associate each <code class="prettyprint">Sighting</code> with a <code class="prettyprint">Location</code> object instead of just including a <code class="prettyprint">location</code> property. Include a page where users may see all <code class="prettyprint">Location</code>s in the area, and click one to see all <code class="prettyprint">Sighting</code>s reported in that region. </li>
+<li>Assign a <code class="prettyprint">Ranger</code> to a <code class="prettyprint">Station</code> class. How would you associated <code class="prettyprint">Station</code>s with <code class="prettyprint">Location</code>s. </li>
+<li>Allow Rangers to add links to images for species. (Do not store image data in the database, store URLS to existing images on the internet instead.)</li>
+<li>Build a comprehensive UI with full CRUD and complete form validation for any new classes you create.</li>
+<li>Integrate a drop-down menu that allows the Ranger to select which animal species they've seen. </li>
+<li>Format timestamps for each sighting, and display in your front-end user interface. </li>
+<li>Allow users to sort <code class="prettyprint">Sighting</code>s by most recent. </li>
+<li>Implement a many-to-many relationship. Assume a sighting may now include multiple species, and animals may be included in multiple sightings.<br>
+<ul>
+<li><strong>Important</strong>: If you update your database structure in any fashion, do not forget to update your README's database setup instructions, including the <em>exact</em> setup steps required to re-create your database. Additionally, include your database schema in your project repo.</li>
+</ul></li>
+<li>Brainstorm other errors or misuses of the application that could occur, and include additional exceptions to combat them. </li>
+<li>Any other functionality you think enhances the overall project. </li>
+</ul>
+<h2>Database Structure</h2>
+<hr>
+<p>Note: If your database structure changes, be sure to include detailed setup instructions with all commands necessary to re-create your databases, columns, and tables (example below from To Do). If your application can not be run with the SQL file provided, your independent project will be failed.</p>
+<pre><code class="prettyprint">In PSQL:
+CREATE DATABASE to_do;
+\c to_do
+CREATE TABLE categories (id serial PRIMARY KEY, name varchar);
+CREATE TABLE tasks (id serial PRIMARY KEY, description varchar);
+</code></pre>
+</div>
+<div class="panel-footer">
+<p>Submit your code for review by 5pm on Friday April 07.</p>
+<p>Visit <a href="https://www.learnhowtoprogram.com/lessons/independent-projects-and-code-reviews" target="_blank">Independent Projects and Code Reviews</a> for details on how to submit, how feedback works and course completion requirements.</p>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<form class="new_submission" id="new_submission" action="https://epicenter.epicodus.com/code_reviews/692/submissions" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="SMEkVXKmA6MyHsii8L1Iud2oqlSiJg/J/ObJ1OJdu6a1CDhZ5GkS887rhwOxvNkBjDp1FqDYUa8mfsdV0/5h/A==">
+<input value="true" type="hidden" name="submission[needs_review]" id="submission_needs_review">
+<input value="1712" type="hidden" name="submission[student_id]" id="submission_student_id">
+<div class="form-group">
+<label for="submission_link">Submission link</label>
+<input class="form-control" placeholder="http://github.com/your-username/your-repository" type="text" name="submission[link]" id="submission_link">
+</div>
+<div class="form-group">
+<p>
+I confirm that I have read and understand the <a href="https://www.learnhowtoprogram.com/lessons/independent-projects-and-code-reviews" target="_blank">guidelines</a> for Independent Projects.
+&nbsp;&nbsp;<input type="checkbox" id="understand-guidelines" value="1" required="required">
+</p>
+<p>&nbsp;</p>
+</div>
+<input type="submit" name="commit" value="Submit" class="btn btn-info">
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<iframe name="stripeXDM_default978861_provider" id="stripeXDM_default978861_provider" src="./Java week 4_files/channel.html" frameborder="0" style="position: absolute; top: -2000px; left: 0px;"></iframe></body></html>
